@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom';
-import HomePage from 'scenes/homePage';
-import LoginPage from 'scenes/loginPage';
-import ProfilePage from 'scenes/profilePage';
+import HomePage from './scenes/homePage';
+import LoginPage from './scenes/loginPage';
+import ProfilePage from './scenes/profilePage';
 
 function App() {
   return (
@@ -13,7 +13,6 @@ function App() {
           <Route path="/profile/:userId" element={<ProfilePage />} />
         </Routes>
       </BrowserRouter>
-      App
     </div>
   )
 }
